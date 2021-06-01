@@ -1,0 +1,100 @@
+
+
+/* Style the navbar */
+
+#navbar {
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+}
+
+/* Navbar links */
+
+#navbar a {
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 25%; 
+}
+
+#navbar a:hover {
+  color: grey;
+}
+
+#copyrightDiv {
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+
+img {
+  margin: 0 auto;
+  width: 30%;
+  display: block;
+}
+
+div {
+  text-align: center;
+}
+
+.formDiv {
+  width: 40%;
+  margin: 2em auto;
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.filmName
+{
+  font-weight: bold;
+}
+
+.filmItem {
+
+  display: inline-block;
+  border: 1px solid grey;
+  margin: 1em;
+  width: 25%;
+}
+
+#outerDiv {
+  position: fixed;
+  width: 100%;
+}
+
+#loginMessage {
+  float: right;
+  border: 1px solid grey;
+  padding: 0.5em;
+}
+
+#logoutButtondiv {
+  float: right;
+  padding-top: 1px;
+  padding-right: 5px;
+  border: 1px solid white;
+}
+
+/* flexbox for sticky footer */
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="sv-se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Filmer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="content">
+
+        <div id="navbar" class="nav">
+            <a href="index.html">Startsida</a>
+            <a href="films.html">Filmer</a>
+            <a href="register.html">Registrera dig</a>
+            <a href="login.html">Logga in</a>
+        </div>
+
+        <div class="main" id="main">
+            <div id="outerDiv">
+                <div id="loginMessage">Du är inte inloggad.
+                </div>
+            </div>
+
+            <img src="imgs/sff.jpg" id="sfflogo" alt="logo">
+
+            <div id="filmsTitleDiv">
+                <h2>Filmer</h2>
+            </div>
+
+            <br>
+
+            <div id="filmListDiv">
+
+            </div>
+
+            <br>
+
+            <div id="rentedFilmTitleDiv">
+                <h2>Era lånade filmer</h2>
+            </div>
+
+            <div id="rentedFilmListDiv">
+
+            </div>
+
+            <div id="rentDiv" class="formDiv">
+                <h2>Låna en film</h2>
+                <form id="rentForm">
+                    <div class="form-group">
+                        <label for="filmid1">Filmens id</label>
+                        <input type="text" class="form-control" id="filmid1" placeholder="Skriv filmens id">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Låna filmen</button>
+                </form>
+            </div>
+
+            <div id="returnDiv" class="formDiv">
+                <h2>Lämna tillbaka en film</h2>
+                <form id="returnForm">
+                    <div class="form-group">
+                        <label for="filmid2">Filmens id</label>
+                        <input type="text" class="form-control" id="filmid2" placeholder="Skriv filmens id">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Lämna tillbaka filmen</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div id="copyrightDiv">
+            © Filmstudion 2021
+        </div>
+    </footer>
+
+    <script src="scripts/site.js"></script>
+    <script src="scripts/films.js"></script>
+
+</body>
+
+</html>
